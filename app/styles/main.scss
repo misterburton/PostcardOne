@@ -1,0 +1,237 @@
+// bower:scss
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$light-blue: #00f1ff;
+$medium-blue: #00bdc8;
+$link-color: #333;
+$link-hover-color: #151515;
+$orange: #ff6600;
+
+body {
+ font-family: 'Merriweather', serif;
+ font-size: 20px;
+ margin: 0;
+ padding: 0;
+ color: #666;
+ margin-top: 40px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  pointer-events: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::-moz-selection { color: #FFF;  background: #444; }
+::selection      { color: #FFF;  background: #444; } 
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 3;
+  max-width: 1170px;
+}
+
+canvas {
+  cursor: crosshair;
+  opacity: .2;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  pointer-events: all;
+}
+
+h1 {
+  margin-top: -10px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+p {
+  line-height: 160%;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  pointer-events: all;
+}
+
+a {
+  border-bottom: 2px solid $light-blue;
+  color: $link-color;
+  transition: all .25s ease-out;
+}
+
+a:hover {
+  border-bottom: 2px solid $medium-blue;
+  color: $link-hover-color;
+}
+
+.caption {
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 0;
+
+  h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: $orange;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 50px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.header-divider {
+    background-color: $light-blue;
+    height: 4px;
+    margin-top: 40px;
+    position: relative;
+    width: 200px;
+  }
+
+.triangle {
+  font-size: 20px;
+  position: relative;
+  top: -7px;
+}
+
+.intro-copy {
+  padding-top: 40px;
+}
+
+.full-width-container {
+  margin: 0;
+  padding: 0;
+}
+
+.full-width-image-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin-top: 2.5%;
+  padding-bottom: 40%;
+  padding-top: 40%;
+  width: 100%;
+}
+
+.re-animator {
+  text-align: center;
+  background-color: #000;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 40px;
+}
+
+.view {
+  background-image: url('../images/view.jpg'); 
+}
+
+.siegestor {
+  background-image: url('../images/siegestor.jpg');  
+}
+
+.team {
+  margin-top: 2.5%;
+}
+
+.two-column {
+  h3 {
+    margin-top: 20px;
+  }
+}
+
+.divider-wrapper {
+
+  padding-left: 20%;
+  padding-right: 20%;
+
+  .divider {
+    height: 1px;
+    background-color: #CCC;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+}
+
+.icon-divider {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.sfo-muc-row {
+  margin-top: 20px;
+}
+
+.col-pull-right {
+  order: 0;
+}
+
+.selfie h4 {
+  line-height: 160%;
+}
+
+// MEDIA QUERIES
+// Small devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .two-column {
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .col-pull-right {
+    order: 1;
+  }
+
+}
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  //
+
+}
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+  //
+
+}

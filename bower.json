@@ -1,0 +1,8 @@
+{
+  "name": "postcard",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "flexboxgrid": "~6.2.0"
+  }
+}
